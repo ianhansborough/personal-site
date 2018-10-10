@@ -6,11 +6,11 @@
 
 // You can delete this file if you're not using it
 
-const path = require('path')
+const path = require("path")
 
-exports.createPages = ({ actions, graphql }) => {
+exports.createPages = function({ actions, graphql }) {
   const { createPage } = actions
-  const expDetailTemplate = path.resolve('src/templates/exp-detail.js')
+  const expDetailTemplate = path.resolve("src/templates/exp-detail.js")
 
   return graphql(`
     query {
@@ -34,7 +34,7 @@ exports.createPages = ({ actions, graphql }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       console.log(node)
       switch (node.frontmatter.type) {
-        case 'exp':
+        case "exp":
           createPage({
             path: node.frontmatter.path,
             component: expDetailTemplate,

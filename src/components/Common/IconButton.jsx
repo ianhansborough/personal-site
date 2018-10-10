@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import FeatherIcon from "feather-icons-react"
+import * as Icon from "react-feather"
 import "./styles.scss"
 
 export const IconButton = ({ name, size, color, link }) => {
@@ -17,10 +17,12 @@ export const IconButton = ({ name, size, color, link }) => {
       />
     </svg>
   )
+
+  const FeatherIcon = Icon[name]
   return (
     <a href={link} className="icon-btn" style={{ borderColor: color }}>
       {name !== "stack-overflow" ? (
-        <FeatherIcon icon={name} size={size} color={color} />
+        <FeatherIcon size={size} color={color} />
       ) : (
         renderStackOverflowIcon()
       )}
@@ -29,18 +31,22 @@ export const IconButton = ({ name, size, color, link }) => {
 }
 
 export const ArrowButton = ({ name, size, color, anchor }) => {
-  const el = document.getElementById(anchor)
-  const yLoc = el
-    ? el.getBoundingClientRect().top + el.scrollTop
-    : window.innerHeight * 0.8
+  const scrollDown = () => {
+    const el = document.getElementById(anchor)
+    const yLoc = el
+      ? el.getBoundingClientRect().top + el.scrollTop
+      : window.innerHeight * 0.8
+    window.scrollTo({ top: yLoc, left: 0, behavior: "smooth" })
+  }
+
+  const FeatherIcon = Icon[name]
+
   return (
     <div
-      onClick={() => {
-        window.scrollTo({ top: yLoc, left: 0, behavior: "smooth" })
-      }}
+      onClick={scrollDown}
       className="icon-btn"
       style={{ borderColor: color }}>
-      <FeatherIcon icon={name} size={size} color={color} />
+      <FeatherIcon size={size} color={color} />
     </div>
   )
 }

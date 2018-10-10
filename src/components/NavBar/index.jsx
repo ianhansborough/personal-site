@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import NavItem from "./navItem"
-import FeatherIcon from "feather-icons-react"
+import * as Icon from "react-feather"
 import resume from "../../files/ian-hansborough-resume-2018.pdf"
 import { Link } from "gatsby"
 import "./styles.scss"
@@ -45,7 +45,7 @@ export default class NavBar extends Component {
         </div>
         <div className="nav-right-cont hide-sm">{renderNavItems()}</div>
         <div className="nav-right-cont sm-only">
-          <FeatherIcon
+          <Icon.Menu
             icon="menu"
             size="36"
             color="#1a1a1a"
@@ -53,7 +53,7 @@ export default class NavBar extends Component {
           />
         </div>
         <div id="hamburger-cont" className="hamburger-cont">
-          <FeatherIcon
+          <Icon.X
             icon="x"
             size="36"
             color="#1a1a1a"

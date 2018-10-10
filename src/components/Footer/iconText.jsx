@@ -1,15 +1,15 @@
 import React from "react"
-import FeatherIcon from "feather-icons-react"
+import * as Icon from "react-feather"
 import PropTypes from "prop-types"
 import "./styles.scss"
 
 const IconText = ({ children, name, size, color, link }) => {
+  const FeatherIcon = Icon[name]
   return (
     <a
       href={link}
       className="icon-text body-text reg"
-      style={{ color: color, fontSize: size + "px" }}
-    >
+      style={{ color: color, fontSize: size + "px" }}>
       <FeatherIcon icon={name} size={size} color={color} />
       {children}
     </a>

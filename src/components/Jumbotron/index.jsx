@@ -19,14 +19,14 @@ export const HomeJumbotron = () => {
           <div className="icon-cont-left">
             <IconButton
               className="hide-sm"
-              name="github"
+              name="Github"
               size="28"
               color="#fff"
               link="https://github.com/ianhansborough"
             />
             <IconButton
               className="hide-sm"
-              name="linkedin"
+              name="Linkedin"
               size="28"
               color="#fff"
               link="https://www.linkedin.com/in/ian-hansborough-128ab0a0/"
@@ -35,7 +35,7 @@ export const HomeJumbotron = () => {
           <div className="icon-cont-right">
             <IconButton
               className="hide-sm"
-              name="mail"
+              name="Mail"
               size="28"
               color="#fff"
               link="mailto:ian.hansborough@gmail.com"
@@ -52,7 +52,7 @@ export const HomeJumbotron = () => {
         <div className="icon-cont lower">
           <ArrowButton
             className="hide-sm"
-            name="arrow-down"
+            name="ArrowDown"
             size="28"
             color="#61EBFF"
             anchor="about"
@@ -76,7 +76,7 @@ export const ProjectsJumbotron = () => {
       <hr className="title-hr" />
       <div className="icon-cont">
         <ArrowButton
-          name="arrow-down"
+          name="ArrowDown"
           size="28"
           color="#61EBFF"
           anchor="projects"
@@ -97,11 +97,10 @@ export const ProjectJumbotron = ({ exp }) => {
       <div className="project-jumbotron-cont">
         <div className="left-cont">
           <IconText
-            name="map-pin"
+            name="MapPin"
             color="#1a1a1a"
             size="16"
-            className="project-header-tagline"
-          >
+            className="project-header-tagline">
             {exp.frontmatter.location} - {exp.frontmatter.tagline}
           </IconText>
           <h1>{exp.frontmatter.name}</h1>

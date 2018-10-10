@@ -5,8 +5,11 @@ import { HomeJumbotron } from "../components/Jumbotron"
 import About from "../components/About"
 import Experience from "../components/Experience"
 
+// TODO: Add in cloudfront for chaching and better availability
+// TODO: Set up s3-deploy cli (be sure to clear cloudfront cache)
+// TODO: Set up SSL
+
 const IndexPage = ({ data }) => {
-  // destructure index data from graphql query
   const { edges: exps } = data.experiences
   const { edges: readings } = data.readings
   const renderReadings = () => {

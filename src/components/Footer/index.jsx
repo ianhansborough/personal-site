@@ -15,21 +15,21 @@ const Footer = () => {
         </p>
         <hr className="title-hr" />
         <div className="footer-contact-cont">
-          <IconText link="mailto:ian.hansborough@gmail.com" name="mail">
+          <IconText link="mailto:ian.hansborough@gmail.com" name="Mail">
             ian.hansborough@gmail.com
           </IconText>
-          <IconText link="tel:+14403969920" name="phone">
+          <IconText link="tel:+14403969920" name="Phone">
             +1 (440) 396-9920
           </IconText>
           <div className="footer-social-cont">
             <IconButton
-              name="github"
+              name="Github"
               size="20"
               color="#fff"
               link="https://github.com/ianhansborough"
             />
             <IconButton
-              name="linkedin"
+              name="Linkedin"
               size="20"
               color="#fff"
               link="https://www.linkedin.com/in/ian-hansborough-128ab0a0/"
