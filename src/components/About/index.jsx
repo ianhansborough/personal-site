@@ -1,0 +1,35 @@
+import React from "react"
+import "./styles.scss"
+
+const About = () => {
+  return (
+    <div className="section-cont about-cont" id="about">
+      <h3 className="section-title">A little about myself</h3>
+      <div className="about-inner-cont">
+        <div className="left" />
+        <div className="right">
+          <p className="body-text md">
+            I’m a 23 year old software engineer with a knack for
+            problem-solving, an inventive mind, and a passion for building
+            things that make a difference.
+          </p>
+          <p className="body-text md">
+            I’ve recently returned from a two year stint in the wild world of
+            tech startups. Over the last two years I’ve had the amazing
+            opportunity to experience the addictive craziness of this industry
+            firsthand, both as a founder and as a private contractor.
+          </p>
+          <p className="body-text md">
+            I’m currently finishing up my studies as a computer science
+            engineering student at The Ohio State University, all the while
+            keeping the door open for whatever awesome opportunities I might
+            encounter next. Want to get in touch? Drop me a line via LinkedIn,
+            Facebook, or email below!
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default About

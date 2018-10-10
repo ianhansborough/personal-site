@@ -1,0 +1,85 @@
+@import "../styles.scss";
+
+$tile-trans: 0.3s all ease;
+
+.exp-cont {
+  background-color: $ih-light-grey;
+}
+.exp-inner-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include respond-to(sm) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.exp-tile-cont {
+  width: calc(33% - 2.4rem);
+  max-width: 20rem;
+  margin: 0 1.2rem;
+  box-sizing: border-box;
+  position: relative;
+  transition: $tile-trans;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &:nth-of-type(n + 4) {
+    margin-top: 2.4rem;
+  }
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  &:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    .exp-tile-popover {
+      opacity: 1;
+    }
+    .name {
+      margin-bottom: 0.5rem;
+    }
+  }
+  @include respond-to(sm) {
+    width: 80%;
+    margin-bottom: 1.5rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+.exp-tile-popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 26, 26, 0.75);
+  opacity: 0;
+  transition: $tile-trans;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $ih-white;
+  box-sizing: border-box;
+  .tagline {
+    font-weight: 300;
+    font-style: italic;
+  }
+  .name {
+    box-sizing: border-box;
+    margin-top: -0.2rem;
+    margin-bottom: 1.5rem;
+    transition: $tile-trans;
+  }
+}
+.all-projects-btn {
+  margin-top: 3rem;
+  padding: 0.5rem 1.5rem !important;
+}

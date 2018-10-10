@@ -1,0 +1,143 @@
+@import "../styles.scss";
+
+.jumbotron-cont {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 44rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+  box-sizing: border-box;
+  color: $ih-white;
+  @include respond-to(sm) {
+    height: 35rem;
+  }
+  &.home {
+    background-color: $ih-light-grey;
+    background-image: url("../../images/jumbotron-bg-final.jpg");
+    background-position: top;
+    @include respond-to(sm) {
+      padding-top: 4rem;
+    }
+  }
+  &.projects {
+    background-color: $ih-light-grey;
+    background-image: url("../../images/jumbotron-bg-projects2.jpg");
+    background-position: center;
+    padding-top: 11rem;
+    @include respond-to(sm) {
+      padding-top: 9.5rem;
+    }
+  }
+  h1 {
+    margin-bottom: 1rem;
+    @include respond-to(sm) {
+      margin-bottom: 0.5rem;
+    }
+  }
+  h4 {
+    @include respond-to(sm) {
+      text-align: center;
+    }
+  }
+  h5 {
+    margin-top: 4rem;
+    text-align: center;
+    &.projects-tagline {
+      margin-top: 0;
+    }
+  }
+}
+.icon-cont-outer:hover .icon-btn {
+  opacity: 0.5;
+  @include respond-to(sm) {
+    opacity: 1;
+  }
+}
+.icon-cont {
+  padding: 0.7rem 0;
+  display: flex;
+  justify-content: space-between;
+  &.lower {
+    justify-content: center;
+  }
+}
+.icon-cont-left,
+.icon-cont-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0.6rem;
+  @include respond-to(sm) {
+    margin: 0 0.3rem;
+  }
+}
+.icon-cont.lower {
+  @include respond-to(sm) {
+    padding-top: 0.2rem;
+  }
+}
+.icon-btn {
+  @include respond-to(sm) {
+    margin: 0 0.3rem;
+  }
+}
+
+.project-jumbotron-cont {
+  display: flex;
+  box-sizing: border-box;
+  color: $ih-black;
+  @include respond-to(sm) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 4rem 2rem 0 0;
+    width: 50%;
+    @include respond-to(sm) {
+      order: 2;
+      width: 100%;
+      padding: 2rem 0 0 0;
+    }
+  }
+  .right-cont {
+    width: 50%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include respond-to(sm) {
+      order: 1;
+      width: 100%;
+    }
+  }
+  .right-cont:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  h1 {
+    color: $ih-black;
+    margin-top: 0.3rem;
+    margin-bottom: 0.8rem;
+    @include respond-to(sm) {
+      margin-top: 0.1rem;
+      margin-bottom: 0.4rem;
+    }
+  }
+  a {
+    font-size: 0.9rem !important;
+  }
+  .project-subtitle {
+    @include respond-to(sm) {
+      font-size: 1.1rem !important;
+    }
+  }
+}

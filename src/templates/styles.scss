@@ -1,0 +1,24 @@
+@import "../components/styles.scss";
+
+.project-content-cont {
+  padding-top: 0 !important;
+  @include respond-to(sm) {
+    margin-top: -3rem !important;
+  }
+  p {
+    font-family: $body-font;
+    line-height: 200%;
+    letter-spacing: 0.7px;
+    font-size: 1.2rem;
+    max-width: 57rem;
+    margin: auto;
+    padding: 1rem 0;
+    @include respond-to(sm) {
+      font-size: 0.95rem;
+    }
+  }
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../styles.scss";
+
+.icon-btn {
+  border: 2px solid $ih-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+  margin: 0 0.7rem;
+  transition: 0.2s all ease;
+  &:hover {
+    opacity: 1 !important;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1.07692,-10,-0.769231)">
+        <g>
+            <path d="M160,10L310,139.761L160,270L10,139.761L160,10Z" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <path d="M160,10L310,139.761L160,270L10,139.761L160,10Z"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1,0,0,0.892484,92.3076,219.119)">
+                    <text x="30.108px" y="18.727px" style="font-family:'Exo-SemiBold', 'Exo';font-weight:600;font-size:288px;fill:white;">I</text>
+                </g>
+                <g transform="matrix(1,0,0,0.928571,29.6676,218.254)">
+                    <text x="30.108px" y="18.727px" style="font-family:'Exo-SemiBold', 'Exo';font-weight:600;font-size:288px;fill:white;">H</text>
+                </g>
+            </g>
+            <path d="M310,139.761L160,270L10,139.761L160,10L310,139.761ZM24.656,139.774L160,257.287L295.344,139.774L160,22.691L24.656,139.774Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

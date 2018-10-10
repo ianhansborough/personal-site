@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css?family=K2D:400,500");
+@import url("https://fonts.googleapis.com/css?family=Nunito:300i,400");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$ih-teal: #61ebff;
+$ih-blue-med: #105eec;
+$ih-blue-light: #658cc7;
+
+$ih-white: #fff;
+$ih-black: #1a1a1a;
+$ih-light-grey: #edeeef;
+$ih-cool-grey: #8c92ac;
+
+$body-font: "Nunito", sans-serif;
+$title-font: "K2D", sans-serif;
+
+@mixin respond-to($media) {
+  @if $media == lg {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    }
+  } @else if $media == md {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $media == lds {
+    @media only screen and (min-width: 450px) and (max-width: 766px) {
+      @content;
+    }
+  } @else if $media == sm {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $media == 2x {
+    @media only screen and (-o-min-device-pixel-ratio: 5/4),
+      only screen and (-webkit-min-device-pixel-ratio: 1.25),
+      only screen and (min-device-pixel-ratio: 1.25),
+      only screen and (min-resolution: 1.25dppx) {
+      @content;
+    }
+  } @else if $media == 3x {
+    @media only screen and (-o-min-device-pixel-ratio: 9/4),
+      only screen and (-webkit-min-device-pixel-ratio: 2.25),
+      only screen and (min-device-pixel-ratio: 2.25),
+      only screen and (min-resolution: 2.25dppx) {
+      @content;
+    }
+  } @else if $media == 4x {
+    @media only screen and (-o-min-device-pixel-ratio: 13/4),
+      only screen and (-webkit-min-device-pixel-ratio: 3.25),
+      only screen and (min-device-pixel-ratio: 3.25),
+      only screen and (min-resolution: 3.25dppx) {
+      @content;
+    }
+  }
+}
+
+.body-text {
+  font-family: $body-font;
+  line-height: 150%;
+  letter-spacing: 0.7px;
+  &.sm {
+    font-size: 0.8rem;
+  }
+  &.reg {
+    font-size: 1rem;
+  }
+  &.md {
+    font-size: 1.3rem;
+  }
+  &.lg {
+    font-size: 1.6rem;
+  }
+}
+
+.title-text {
+  font-family: $title-font;
+  line-height: 180%;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+  &.sm {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  &.reg {
+    font-size: 2rem;
+  }
+  &.md {
+    font-size: 2.4rem;
+  }
+  &.lg {
+    font-size: 3rem;
+  }
+}
+
+h1 {
+  font-family: $title-font;
+  font-size: 3rem;
+  color: $ih-white;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  @include respond-to(sm) {
+    font-size: 2.4rem;
+  }
+}
+
+h2 {
+  font-family: $title-font;
+  font-size: 2.4rem;
+  color: $ih-white;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  @include respond-to(sm) {
+    font-size: 1.9rem;
+  }
+}
+
+h3 {
+  font-family: $title-font;
+  font-size: 2rem;
+  color: $ih-white;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  @include respond-to(sm) {
+    font-size: 1.7rem;
+  }
+}
+
+h4 {
+  font-family: $title-font;
+  font-size: 1.8rem;
+  color: $ih-white;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  @include respond-to(sm) {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-family: $title-font;
+  font-size: 1.5rem;
+  color: $ih-white;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  @include respond-to(sm) {
+    font-size: 1.2rem;
+  }
+}
+
+.hide-sm {
+  @include respond-to(sm) {
+    display: none !important;
+  }
+}
+
+.hide-md {
+  @include respond-to(md) {
+    display: none !important;
+  }
+}
+
+.sm-only {
+  display: none !important;
+  @include respond-to(sm) {
+    display: initial !important;
+  }
+}
+
+.md-only {
+  display: none !important;
+  @include respond-to(md) {
+    display: initial !important;
+  }
+}
+
+.site-cont {
+}
+
+.section-title {
+  color: $ih-black;
+  font-family: $title-font;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  @include respond-to(sm) {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.section-cont {
+  width: calc(100% - 4rem);
+  max-width: 65rem;
+  padding: 5rem 0;
+  margin: auto;
+  @include respond-to(sm) {
+    padding: 4rem 0;
+    width: calc(100% - 2rem);
+  }
+}
+
+.title-hr {
+  border: none;
+  width: 8rem;
+  border-bottom: 1px solid $ih-white;
+  margin: 2.5rem 0 1.8rem 0;
+  &.alt {
+    border-color: $ih-black;
+  }
+  @include respond-to(sm) {
+    margin: 1.8rem 0 1.2rem 0;
+  }
+}
+
+.link-btn {
+  border: 1px solid $ih-white;
+  color: $ih-white;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.3rem 1.2rem;
+  transition: 0.3s all ease;
+  &.alt {
+    border: 1px solid $ih-black;
+    color: $ih-black;
+  }
+  &.alt:hover {
+    background-color: $ih-black;
+    color: $ih-white;
+    border-color: $ih-black;
+  }
+  &:hover {
+    // background-color: $ih-white;
+    // color: $ih-black;
+    color: $ih-teal;
+    border-color: $ih-teal;
+  }
+}

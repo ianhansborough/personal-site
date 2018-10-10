@@ -1,0 +1,40 @@
+@import "../styles.scss";
+
+.about-inner-cont {
+  display: flex;
+  justify-content: center;
+  @include respond-to(sm) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .left {
+    width: 13rem;
+    height: 13rem;
+    margin-bottom: 2rem;
+    background-image: url("https://s3.us-east-2.amazonaws.com/portfolio-assets-ianhansborough/personal-site/headshot.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .right {
+    width: calc(100% - 13rem);
+    padding-left: 3rem;
+    box-sizing: border-box;
+    @include respond-to(sm) {
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+  .right p {
+    padding: 0.55rem 0;
+    font-size: 1.2rem;
+    @include respond-to(md) {
+      font-size: 1.1rem;
+    }
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+}
