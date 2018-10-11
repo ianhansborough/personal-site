@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { HomeJumbotron } from "../components/Jumbotron"
 import About from "../components/About"
@@ -12,11 +12,11 @@ import Experience from "../components/Experience"
 const IndexPage = ({ data }) => {
   const { edges: exps } = data.experiences
   const { edges: readings } = data.readings
-  const renderReadings = () => {
-    return readings.map((reading, index) => {
-      return <li key={index}>{reading.node.frontmatter.title}</li>
-    })
-  }
+  // const renderReadings = () => {
+  //   return readings.map((reading, index) => {
+  //     return <li key={index}>{reading.node.frontmatter.title}</li>
+  //   })
+  // }
 
   return (
     <Layout>
@@ -25,7 +25,6 @@ const IndexPage = ({ data }) => {
       <Experience exps={exps} />
     </Layout>
   )
-  // <ul>{renderReadings()}</ul>
 }
 
 export const pageQuery = graphql`

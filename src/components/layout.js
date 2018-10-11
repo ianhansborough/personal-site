@@ -25,7 +25,7 @@ const Layout = ({ children, activeNavIndex, altNav }) => (
           meta={[
             {
               name: "description",
-              content: "Ian Hansborough's personal website",
+              content: "Ian Hansborough's personal website.",
             },
             {
               name: "keywords",

@@ -23,7 +23,7 @@
   "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && s3-deploy './public/**' --cwd './public/' --bucket ianhansborough.com  --deleteRemoved --gzip",
+    "deploy": "gatsby build && aws s3 sync public/ s3://ianhansborough.com --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",

@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-    <g transform="matrix(1,0,0,1.07692,-10,-0.769231)">
-        <path d="M160,10L310,139.761L160,270L10,139.761L160,10Z" style="fill:none;"/>
-        <g>
-            <clipPath id="_clip1">
-                <path d="M160,10L310,139.761L160,270L10,139.761L160,10Z"/>
-            </clipPath>
-            <g clip-path="url(#_clip1)">
-                <g transform="matrix(1,0,0,0.892484,122.416,235.833)">
-                    <text x="0px" y="0px" style="font-family:'Exo-SemiBold', 'Exo';font-weight:600;font-size:288px;fill:rgb(26,26,26);">I</text>
-                </g>
-                <g transform="matrix(1,0,0,0.928571,59.7756,235.643)">
-                    <text x="0px" y="0px" style="font-family:'Exo-SemiBold', 'Exo';font-weight:600;font-size:288px;fill:rgb(26,26,26);">H</text>
-                </g>
+    <g transform="matrix(1,0,0,1,-336.164,-1.42109e-14)">
+        <g id="Export" transform="matrix(1,0,0,1,336.164,1.42109e-14)">
+            <rect x="0" y="0" width="300" height="300" style="fill:none;"/>
+            <g transform="matrix(1,0,0,1,-336.164,-1.42109e-14)">
+                <path d="M530.804,51.588L636.164,149.743L531.092,247.99L530.804,248.26L486.164,290L441.236,247.99L405.812,214.867L336.164,149.743L486.164,10L530.804,51.588ZM468.452,164.296L441.236,164.296L441.236,234.3L486.164,276.309L530.804,234.569L530.804,164.296L503.876,164.296L503.876,253.204L468.452,253.204L468.452,164.296ZM350.82,149.756L405.812,201.177L405.812,98.525L350.82,149.756ZM566.516,98.525L566.516,201.177L621.508,149.756L566.516,98.525ZM441.236,65.523L441.236,132.328L468.452,132.328L468.452,48.92L503.876,48.92L503.876,132.328L530.804,132.328L530.804,65.255L486.164,23.667L441.236,65.523Z" style="fill:rgb(26,26,26);"/>
             </g>
         </g>
-        <path d="M310,139.761L160,270L10,139.761L160,10L310,139.761ZM24.656,139.774L160,257.287L295.344,139.774L160,22.691L24.656,139.774Z" style="fill:rgb(26,26,26);"/>
     </g>
 </svg>
