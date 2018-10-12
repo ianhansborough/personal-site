@@ -22,11 +22,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "gatsby-starter-default",
-        short_name: "starter",
+        name: "ianhansborough.com",
+        short_name: "ianhansborough.com",
         start_url: "/",
-        background_color: "#663399",
-        theme_color: "#663399",
+        background_color: "#fff",
+        theme_color: "#fff",
         display: "minimal-ui",
         icon: "src/images/personal-site-logo-alt.svg", // This path is relative to the root of the site.
       },

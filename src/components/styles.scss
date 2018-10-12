@@ -6,14 +6,11 @@
   padding: 0;
 }
 
-$ih-teal: #61ebff;
-$ih-blue-med: #105eec;
-$ih-blue-light: #658cc7;
-
 $ih-white: #fff;
 $ih-black: #1a1a1a;
 $ih-light-grey: #edeeef;
 $ih-cool-grey: #8c92ac;
+$ih-teal: #61ebff;
 
 $body-font: "Nunito", sans-serif;
 $title-font: "K2D", sans-serif;
@@ -234,8 +231,6 @@ h5 {
     border-color: $ih-black;
   }
   &:hover {
-    // background-color: $ih-white;
-    // color: $ih-black;
     color: $ih-teal;
     border-color: $ih-teal;
   }

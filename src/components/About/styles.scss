@@ -8,7 +8,6 @@
     align-items: center;
     justify-content: flex-start;
   }
-
   .left {
     width: 13rem;
     height: 13rem;
@@ -30,11 +29,11 @@
   .right p {
     padding: 0.55rem 0;
     font-size: 1.2rem;
-    @include respond-to(md) {
-      font-size: 1.1rem;
-    }
     &:first-of-type {
       padding-top: 0;
+    }
+    @include respond-to(md) {
+      font-size: 1.1rem;
     }
   }
 }
