@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import NavItem from "./navItem"
 import * as Icon from "react-feather"
-import resume from "../../files/ian-hansborough-resume-2018.pdf"
+import resume from "../../files/ian-hansborough-resume-2019.pdf"
 import { Link } from "gatsby"
 import "./styles.scss"
 

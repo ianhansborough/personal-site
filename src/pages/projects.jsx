@@ -7,17 +7,24 @@ import "./styles.scss"
 
 const Projects = ({ data }) => {
   const { edges: exps } = data.allMarkdownRemark
-  const renderExperiences = () =>
-    exps
-      .sort(
-        (a, b) =>
-          new Date(a.node.frontmatter.startDate) <
-          new Date(b.node.frontmatter.name)
-      )
+  const renderExperiences = () => {
+    const sortedExps = exps.sort(
+      (a, b) =>
+        -1 +
+        2 *
+          Number(
+            new Date(a.node.frontmatter.startDate) <
+              new Date(b.node.frontmatter.startDate)
+          )
+    )
 
-      .map((exp, index) => {
-        return <ExperienceTile key={index} exp={exp.node.frontmatter} />
-      })
+    console.log(exps)
+    console.log(sortedExps)
+
+    return sortedExps.map((exp, index) => {
+      return <ExperienceTile key={index} exp={exp.node.frontmatter} />
+    })
+  }
 
   return (
     <Layout>
@@ -39,6 +46,7 @@ export const pageQuery = graphql`
             tagline
             tileImage
             path
+            startDate
           }
         }
       }

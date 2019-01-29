@@ -18,9 +18,8 @@ const Experience = ({ exps }) => {
           <ExperienceTile
             key="1"
             exp={
-              exps.filter(
-                exp => exp.node.frontmatter.path === "/wallace-hatch"
-              )[0].node.frontmatter
+              exps.filter(exp => exp.node.frontmatter.path === "/equitai")[0]
+                .node.frontmatter
             }
           />
           <ExperienceTile
@@ -41,8 +40,7 @@ const Experience = ({ exps }) => {
         <div className="exp-inner-cont">
           <Link
             to="/projects"
-            className="link-btn alt body-text md all-projects-btn"
-          >
+            className="link-btn alt body-text md all-projects-btn">
             View all projects
           </Link>
         </div>
