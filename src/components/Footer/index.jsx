@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="body-text sm copyright-text">
-          © 2018 Ian Hansborough. All rights reserved.
+          © 2019 Ian Hansborough. All rights reserved.
         </p>
       </div>
     </div>

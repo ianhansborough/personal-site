@@ -9,15 +9,21 @@ const About = () => {
         <div className="left" />
         <div className="right">
           <p className="body-text md">
-            I’m a 23 year old software engineer with a knack for
+            I’m a 24 year old software engineer with a knack for
             problem-solving, an inventive mind, and a passion for building
             things that make a difference.
           </p>
           <p className="body-text md">
-            I’ve recently returned from a two year stint in the wild world of
-            tech startups. Over the last two years I’ve had the amazing
-            opportunity to experience the addictive craziness of this industry
-            firsthand, both as a founder and as a private contractor.
+            This constant urge to build and create led me to discover
+            programming back in 2015; teaching myself Swift in order to build
+            out a mobile app idea. This newfound hobby quickly consumed much of
+            my time/attention, and in 2016 I took a 2 year sabbatical from
+            school after receiving investment to pursue the app I had built.
+          </p>
+          <p className="body-text md">
+            Those two years were nothing short of incredible, and I feel so
+            blessed to have experienced the wild world of tech startups
+            firsthand; both as a founder and as a private contractor.
           </p>
           <p className="body-text md">
             I’m currently finishing up my studies as a computer science
